@@ -1,0 +1,227 @@
+.menu{
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 530px;
+    height: 30px;
+}
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-inline: 10px;
+    display: block;
+    font-size: 18px;
+
+}
+
+.menu li a:hover {
+    color: #a94b4b ;
+    font-size: 19px;
+}
+
+body {
+    background-image: url(Assets/Img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 20%;
+    min-height: 100vh;
+}
+
+
+
+#proyectos{
+    background-color: rgba(46, 46, 46, 0.7);
+    width: 65%;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    padding: 3%;
+    padding-top: 2%;
+    box-shadow: 1px 1px 20px #a94b4b;
+    position: relative;
+    border-radius: 80px;
+}
+
+#proyectos h1{
+    color: aliceblue;
+    font-family: helvetica;
+    font-size: 40px;
+    margin-top: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lista_articulo{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 90%;
+}
+
+article{
+    color: aliceblue;
+    background-color: #1E1E1E ;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: block;
+    min-width: 500px;
+    max-width: 500px;
+    border-radius: 50px;
+    cursor:url(https://cur.cursors-4u.net/cursors/cur-7/cur668.cur), auto !important;
+}
+
+article:hover{
+    background-color:  #4E4E4E;
+}
+
+article h2{
+    padding-top: 5%;
+    font-size: 30px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+ }
+
+.icon{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+article p {
+    font-size: 19px;
+    padding-left: 7%;
+    padding-right: 4%;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+}
+
+
+
+#toplevel{
+    position: fixed;
+    background-color: #1E1E1E;
+    top: 5%;
+    max-width: 850px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px#a94b4b;
+    min-width: 50px;
+}
+
+#exit{
+    margin-left: 93%;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0);
+    color: red;
+    font-size: 25px;
+    width: 45px;
+    height:45px;
+    border: none;
+    cursor:url(https://cur.cursors-4u.net/cursors/cur-7/cur668.cur), auto !important;
+}
+
+#toplevel h2{
+    color: aliceblue;
+    font-family: helvetica;
+    display: block;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.icon{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+.buttons{
+    width: 500px;
+    margin-left: 105px;
+    justify-content: center;
+    justify-items: center;
+}
+.buttons button{
+    margin-left: 140px;
+    background-image: url(Assets/Img/button.jpg);
+    background-size: cover;
+    margin-top: 1px;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    color: aliceblue;
+    border: none;
+    border-color: #a94b4b;
+    box-shadow: 2px 2px 10px#a94b4b;
+    font-family: sans-serif;
+    cursor:url(https://cur.cursors-4u.net/cursors/cur-7/cur668.cur), auto !important;
+}
+.buttons button:hover{
+background-color:#121212;
+background-image: none;
+box-shadow: 1px 1px 3px#a94b4b;
+}
+
+.texto{
+    color: aliceblue;
+    text-align: justify;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: sans-serif;
+}
+
+.subtitulo{
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.imagenes{
+    display: inline-flex;
+    width: 700px;
+    height: 300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 3%;
+    background-color: #121212;
+}
+
+.imagenes img{
+    width: 300px;
+    height: 300px;
+    margin-left: 10%;
+}
+#texto_simple{
+    bottom: 0;
+    color: aliceblue;
+    background-color: rgba(46, 46, 46, 0.7);
+    box-shadow: 2px 2px 10px #a94b4b;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    position: absolute;
+    color: aliceblue;
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0;
+}
