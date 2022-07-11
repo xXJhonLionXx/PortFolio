@@ -15,8 +15,8 @@ function TopLevel(num){
                     <div class="texto">
                         <p class="subtitulo">Descripción:</p>
                         <p>
-                            SetDown facilita al usuario apagar el pc en un intervalo de tiempo predeterminado.
-                            Esta aplicación esta orientada para personas que ve contenido desde el pc para dormir y les gustaria que se apagase en un tiempo predeterminado de forma sencilla.
+                            SetDown facilita al usuario apagar el pc en un intervalo de tiempo predeterminado con la facilidad de hacer dos clicks.
+                            Esta aplicación esta orientada para personas que ve contenido desde el pc antes de dormir y les gustaria que se apagase en un tiempo predeterminado de forma sencilla.
                             A falta de 10 minutos para el apagado aparece un icono el la esquina izquierda superior de la pantalla para alertar al usuario, al clickar en el cancela el apagado.
                         </p>
                         <div class="imagenes">

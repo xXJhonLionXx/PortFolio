@@ -7,7 +7,7 @@
 <header>
     <nav id="navegador">
         <ul class="menu">
-            <li><a href="#">Inicio</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#">Curriculum</a></li>
             <li><a href="#">Contactame</a></li>
@@ -16,23 +16,33 @@
     </nav>
 </header>
 <body>
-
-    <section id="proyectos">
+    <section class="post" id="tecnologias">
+        <h1>Tecnologias en aprendizaje</h1>
+        <div id="pack_img">
+            <img class="imagen" src="Assets/Img/iconos/html.png"/>
+            <img class="imagen" src="Assets/Img/iconos/css.png"/>
+            <img class="imagen" src="Assets/Img/iconos/js.png"/>
+            <img class="imagen" src="Assets/Img/iconos/python.png"/>
+        </div>
+    </section>
+    <section class="post" id="proyectos">
         <h1>Proyectos Propios</h1>
         <div id="lista_articulo">
             <article onclick="TopLevel(0)">
                 <h2>SetDown</h2>
                 <div>
-                    <img src="Assets/Img/setdown/SetDown_img.png" class="icon"/>
-                    <p>SetDown facilita al usuario apagar el pc en un intervalo de tiempo predeterminado...</p>
+                    <img src="Assets/Img/setdown/setdown_img.png" class="icon"/>
+                    <p>SetDown facilita al usuario apagar el pc en un intervalo de tiempo predeterminado con la facilidad de hacer dos clicks...</p>
                     <p>  Aplicacion de escritorio creada con Python.</p>
                 </div>
             </article>
             <article onclick="TopLevel(1)">
                 <h2>OrderDown</h2>
                 <div>
-                    <img src="Assets/Img/orderdown/OrderDown_img.png" class="icon"/>
-                    <p>OrderDown asiste a la gestion de la carpeta de descargas ofreciendo al usuario herramientas, como dividir....</p>
+                    <img src="Assets/Img/orderdown/orderdown_img.png" class="icon"/>
+                    <p>OrderDown asiste a la gestion de la carpeta de descargas ofreciendo al usuario herramientas, como dividir archivos
+                        según su tipo...    
+                    </p>
                     <p>Aplicacion de escritorio creada con Python.</p>
                 </div>
             </article>
