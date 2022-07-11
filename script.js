@@ -26,7 +26,7 @@ function TopLevel(num){
                         </div>
                         <p>
                             Aplicacion de escritorio creada con Python.<br>
-                            Librerias utilizadas para su creación: Tkinter, Pil, Subprocces y Pystray.
+                            Librerias utilizadas para su creación: Tkinter, Pil, Subprocces, Notifypy, Threading y Pystray.
                         </p>
                 </div>`;
         }
@@ -53,7 +53,7 @@ function TopLevel(num){
                     </div>
                     <p>
                         Aplicacion de escritorio creada con Python.<br>
-                        Librerias utilizadas para su creación: Tkinter, Pil, Subprocces y Pystray.
+                        Librerias utilizadas para su creación: Tkinter, Pil, Subprocces, Notifypy, Ctypes, Shutil, Os y Pathlib.
                     </p>
             </div>`;
         }

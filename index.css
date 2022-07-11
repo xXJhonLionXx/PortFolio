@@ -3,11 +3,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
-    width: 530px;
+    width: 600px;
     height: 30px;
 }
 .menu li{
     display: inline-block;
+    margin-left: 10px;
 }
 
 .menu li a{
@@ -113,12 +114,15 @@ article p {
 #toplevel{
     position: fixed;
     background-color: #1E1E1E;
-    top: 5%;
-    max-width: 850px;
+    top: 3%;
+    width: 850px;
     border-radius: 30px;
     box-shadow: 1px 1px 20px#a94b4b;
     min-width: 50px;
-    display: flex;
+    margin-left: 5%;
+
+
+
 }
 
 #exit{
@@ -189,13 +193,17 @@ box-shadow: 1px 1px 3px#a94b4b;
     margin-left: 50px;
 }
 .imagenes{
-    display: inline-flex;
+    display: flex;
     max-width: 700px;
+    min-width: 50px;
     height: 300px;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 3%;
+    padding: 2%;
     background-color: #121212;
+    margin-right: 5%;
+    margin-left: 5%;
+
 }
 
 .imagenes img{
