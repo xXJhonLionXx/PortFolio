@@ -7,7 +7,7 @@ function TopLevel(info){
                 <div>
                     <button id="exit">x</button>
                     <h2>SetDown</h2>
-                    <img src="Assets/Img/setdown/SetDown_img.png" class="icon"/>
+                    <img src="Assets/Img/setdown/icon.png" class="icon"/>
                     <div class="buttons">
                         <button>Ver<br>Código</button>
                         <button>Descargar Instalador</button>
@@ -35,7 +35,7 @@ function TopLevel(info){
             <div>
                 <button id="exit">x</button>
                 <h2>OrderDown</h2>
-                <img src="Assets/Img/orderdown/orderdown_img.png" class="icon"/>
+                <img src="Assets/Img/orderdown/icon.png" class="icon"/>
                 <div class="buttons">
                     <button>Ver<br>Código</button>
                     <button>Descargar Instalador</button>
