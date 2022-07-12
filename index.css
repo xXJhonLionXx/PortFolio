@@ -6,6 +6,8 @@
     max-width: 700px;
     height: 30px;
     text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 .menu li{
     display: inline-block;
@@ -22,6 +24,18 @@
 .menu li a:hover {
     color: #a94b4b ;
     font-size: 19px;
+}
+
+#modo{
+    background-image: url(Assets/Img/botones/light.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 13px;
+    width: 60px;
+    height: 30px;
+    margin-left: 30px;
+    border: solid black 1px;
+    box-shadow: 1px 1px 20px #a94b4b;
 }
 
 body {
@@ -168,7 +182,7 @@ article p {
 }
 .buttons button{
     margin-left: 141px;
-    background-image: url(Assets/Img/button.jpg);
+    background-image: url(Assets/Img/botones/button.jpg);
     background-size: cover;
     margin-top: 1px;
     border-radius: 5px;

@@ -1,8 +1,8 @@
-function TopLevel(num){
-    var window= document.getElementById("toplevel");
+function TopLevel(info){
+    const window = document.getElementById("toplevel");
     TopLevelDestroy()
     if (window.childElementCount == 0){
-        if (num == 0){
+        if (info == "SetDown"){
             window.innerHTML = `
                 <div>
                     <button id="exit">x</button>
@@ -30,7 +30,7 @@ function TopLevel(num){
                         </p>
                 </div>`;
         }
-        if (num == 1){
+        if (info == "OrderDown"){
             window.innerHTML = `
             <div>
                 <button id="exit">x</button>
@@ -61,9 +61,69 @@ function TopLevel(num){
 }
 
 function TopLevelDestroy(){
-    var window = document.getElementById("toplevel")
+    const window = document.getElementById("toplevel")
     if (window.childElementCount == 1){
         window.removeChild(window.firstChild);
         TopLevelDestroy()
     }
 }
+
+
+
+
+
+function DarkMode(){
+    var body = document.getElementById("cuerpo");
+    var posts =  document.querySelectorAll(".post")
+    var texto = document.getElementById("texto_simple")
+    var modo = document.getElementById("modo")
+    modo.style.boxShadow = '1px 1px 20px white';
+    modo.style.backgroundImage = "url(Assets/Img/botones/dark.png)"
+    texto.style.boxShadow = '1px 1px 20px white';
+    body.style.backgroundImage = "none";
+    body.style.backgroundColor = "#1E1E1E"
+    posts.forEach(post => {
+        post.style.boxShadow = '1px 1px 20px white';
+    });
+        mode = "dark";
+}
+
+function LightMode(){
+    var body = document.getElementById("cuerpo");
+    var posts =  document.querySelectorAll(".post")
+    var texto = document.getElementById("texto_simple")
+    var modo = document.getElementById("modo")
+    modo.style.boxShadow = "1px 1px 20px #a94b4b";
+    modo.style.backgroundImage = "url(Assets/Img/botones/light.png)"
+    texto.style.boxShadow = '1px 1px 20px #a94b4b';
+    body.style.backgroundImage = "url(Assets/Img/background.jpg)";
+    body.style.backgroundColor = "none"
+    posts.forEach(post => {
+        post.style.boxShadow = '1px 1px 20px #a94b4b';
+    });
+    mode = "light";
+}
+
+function ChangeMode(){
+    var mode = localStorage.getItem('dark-mode');
+    if ((mode == "light") || (mode == null)){
+        DarkMode()
+        localStorage.setItem('dark-mode', 'dark')
+    }else{
+        LightMode()
+        localStorage.setItem('dark-mode', 'light')
+    }
+}
+
+function CheckMode(){
+    var mode = localStorage.getItem('dark-mode')
+    if (mode == "dark"){
+        DarkMode()
+    }else{
+        LightMode()
+    }
+}
+
+
+
+

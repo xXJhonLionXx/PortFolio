@@ -12,14 +12,15 @@
             <li><a href="#">Curriculum</a></li>
             <li><a href="#">Contactame</a></li>
             <li><a href="#">Sugerencias</a></li>
+            <li><button id="modo" onclick="ChangeMode()"></button></li>
         </ul>
     </nav>
 </header>
-<body>
+<body id="cuerpo">
     <section class="post" id="tecnologias">
         <h1>Tecnologias en aprendizaje</h1>
         <div id="pack_img">
-            <img class="imagen" src="Assets/Img/iconos/html.png"/>
+            <img class="imagen" src="Assets/Img/iconos/html.png" onclick="href=google.com"/>
             <img class="imagen" src="Assets/Img/iconos/css.png"/>
             <img class="imagen" src="Assets/Img/iconos/js.png"/>
             <img class="imagen" src="Assets/Img/iconos/python.png"/>
@@ -28,7 +29,7 @@
     <section class="post" id="proyectos">
         <h1>Proyectos Propios</h1>
         <div id="lista_articulo">
-            <article onclick="TopLevel(0)">
+            <article onclick="TopLevel('SetDown')">
                 <h2>SetDown</h2>
                 <div>
                     <img src="Assets/Img/setdown/setdown_img.png" class="icon"/>
@@ -36,7 +37,7 @@
                     <p>  Aplicacion de escritorio creada con Python.</p>
                 </div>
             </article>
-            <article onclick="TopLevel(1)">
+            <article onclick="TopLevel('OrderDown')">
                 <h2>OrderDown</h2>
                 <div>
                     <img src="Assets/Img/orderdown/orderdown_img.png" class="icon"/>
@@ -53,7 +54,7 @@
     <footer>© Copyright 2022<br>
         La distribucion de estas aplicaciones debe de ser gratuita, en ninguna circunstancia se permitira la venta de las mismas.
     </footer>
-    
+    <script>CheckMode()</script>
     <div id="toplevel"></div>
 </body>
 </html>
