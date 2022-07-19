@@ -297,12 +297,12 @@ footer{
     border: none;
     box-shadow: #a94b4b 1px 1px 10px;
     width: 300px;
+    max-width: 500px;
     height: 30px;
     font-family: sans-serif;
     cursor: url(Assets/cursors/dark.cur), auto !important;
 }
 #mensaje{
-    width:400px;
     height: 200px;
     max-width: 500px;
 }
