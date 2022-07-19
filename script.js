@@ -1,3 +1,11 @@
+
+var body = document.getElementById("cuerpo");
+var posts =  document.querySelectorAll(".post");
+var text = document.getElementById("texto_simple");
+var mode_button = document.getElementById("modo");
+var toplevel = document.getElementById("toplevel");
+var buttons = document.querySelectorAll(".button");
+
 function TopLevel(info){
     const window = document.getElementById("toplevel");
     TopLevelDestroy()
@@ -8,9 +16,9 @@ function TopLevel(info){
                     <button id="exit">x</button>
                     <h2>SetDown</h2>
                     <img src="Assets/Img/setdown/icon.png" class="icon"/>
-                    <div class="buttons">
-                        <button>Ver<br>Código</button>
-                        <button>Descargar Instalador</button>
+                    <div class="button-pack">
+                        <button class="button">Ver<br>Código</button>
+                        <button class="button">Descargar Instalador</button>
                     </div>
                     <div class="texto">
                         <p class="subtitulo">Descripción:</p>
@@ -36,9 +44,9 @@ function TopLevel(info){
                 <button id="exit">x</button>
                 <h2>OrderDown</h2>
                 <img src="Assets/Img/orderdown/icon.png" class="icon"/>
-                <div class="buttons">
-                    <button>Ver<br>Código</button>
-                    <button>Descargar Instalador</button>
+                <div class="button-pack">
+                    <button class="button">Ver<br>Código</button>
+                    <button class="button">Descargar Instalador</button>
                 </div>
                 <div class="texto">
                     <p class="subtitulo">Descripción:</p>
@@ -57,7 +65,9 @@ function TopLevel(info){
                     </p>
             </div>`;
         }
-    }document.getElementById("exit").addEventListener('click', TopLevelDestroy);
+    }
+    document.getElementById("exit").addEventListener('click', TopLevelDestroy);
+    CheckMode();
 }
 
 function TopLevelDestroy(){
@@ -72,58 +82,84 @@ function TopLevelDestroy(){
 
 
 
+
 function DarkMode(){
     var body = document.getElementById("cuerpo");
-    var posts =  document.querySelectorAll(".post")
-    var texto = document.getElementById("texto_simple")
-    var modo = document.getElementById("modo")
-    modo.style.boxShadow = '1px 1px 20px white';
-    modo.style.backgroundImage = "url(Assets/Img/botones/dark.png)"
-    texto.style.boxShadow = '1px 1px 20px white';
+    var posts =  document.querySelectorAll(".post");
+    var text = document.getElementById("texto_simple");
+    var mode_button = document.getElementById("modo");
+    var toplevel = document.getElementById("toplevel");
+    var buttons = document.querySelectorAll(".button");
+    var imput_text = document.querySelectorAll(".imput-text");
+    var planet = document.getElementById("planeta")
+
+    toplevel.style.boxShadow = '1px 1px 20px aliceblue';
+    mode_button.style.boxShadow = '1px 1px 20px aliceblue';
+    mode_button.style.backgroundImage = "url(Assets/Img/botones/dark.png)";
+    text.style.boxShadow = '1px 1px 20px aliceblue';
     body.style.backgroundImage = "none";
     body.style.backgroundColor = "#1E1E1E"
+    planet.src = "Assets/Img/planeta/luna.png"
+
     posts.forEach(post => {
-        post.style.boxShadow = '1px 1px 20px white';
+        post.style.boxShadow = '1px 1px 20px aliceblue';
     });
-        mode = "dark";
+    buttons.forEach(button => {
+        button.style.boxShadow = '1px 1px 20px aliceblue';
+    });
+    imput_text.forEach(imput => {
+        imput.style.boxShadow = '1px 1px 20px aliceblue';
+    });
+
+
 }
 
 function LightMode(){
     var body = document.getElementById("cuerpo");
-    var posts =  document.querySelectorAll(".post")
-    var texto = document.getElementById("texto_simple")
-    var modo = document.getElementById("modo")
-    modo.style.boxShadow = "1px 1px 20px #a94b4b";
-    modo.style.backgroundImage = "url(Assets/Img/botones/light.png)"
-    texto.style.boxShadow = '1px 1px 20px #a94b4b';
+    var posts =  document.querySelectorAll(".post");
+    var text = document.getElementById("texto_simple");
+    var mode_button = document.getElementById("modo");
+    var toplevel = document.getElementById("toplevel");
+    var buttons = document.querySelectorAll(".button");
+    var imput_text = document.querySelectorAll(".imput-text");
+    var planet = document.getElementById("planeta")
+
+    toplevel.style.boxShadow = '1px 1px 20px #a94b4b';
+    mode_button.style.boxShadow = "1px 1px 20px #a94b4b";
+    mode_button.style.backgroundImage = "url(Assets/Img/botones/light.png)";
+    text.style.boxShadow = '1px 1px 20px #a94b4b';
     body.style.backgroundImage = "url(Assets/Img/background.jpg)";
-    body.style.backgroundColor = "none"
+    body.style.backgroundColor = "none";
+    planet.src = "Assets/Img/planeta/marte.png"
     posts.forEach(post => {
         post.style.boxShadow = '1px 1px 20px #a94b4b';
     });
-    mode = "light";
+    buttons.forEach(button => {
+        button.style.boxShadow = '1px 1px 20px #a94b4b';
+    });
+    imput_text.forEach(imput => {
+        imput.style.boxShadow = '1px 1px 20px #a94b4b';
+    });
+
 }
 
 function ChangeMode(){
     var mode = localStorage.getItem('dark-mode');
     if ((mode == "light") || (mode == null)){
-        DarkMode()
-        localStorage.setItem('dark-mode', 'dark')
+        DarkMode();
+        localStorage.setItem('dark-mode', 'dark');
     }else{
-        LightMode()
-        localStorage.setItem('dark-mode', 'light')
+        LightMode();
+        localStorage.setItem('dark-mode', 'light');
     }
 }
 
 function CheckMode(){
-    var mode = localStorage.getItem('dark-mode')
+    var mode = localStorage.getItem('dark-mode');
     if (mode == "dark"){
-        DarkMode()
+        DarkMode();
     }else{
-        LightMode()
+        LightMode();
     }
 }
-
-
-
 
